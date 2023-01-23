@@ -1,0 +1,183 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+
+}
+
+body{
+    font-family: sans-serif;
+    min-height: 100vh;
+}
+
+.container{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    gap: 20px;
+
+    /* 1.HORIZONTAL ALINGMENT */
+    /* justify-content: center; for center */
+    /* justify-content:space-around; even space but both corner has half space of the rest */
+     /* justify-content: space-evenly; equally spaced */
+
+     /*2. VERTICAL ALINGMENT */
+     /* if its not work then try by giving height/flex wrap */
+     /* flex-wrap: wrap;
+     align-content: center; 
+     align-content: space-around; 
+     align-content:space-evenly;  */
+/* 
+    3. PLACE-CONTENT(Shorthand for justify/align-content;)
+     syntax - place-content: align-content justify-content:  */
+   
+/*    
+   4.  justify-content: flex-end;
+     align-content: center; */
+     /* SAME AS ABOVE IN SINGLE LINE */
+     /* flex-wrap: wrap;
+     place-content: center flex-end; */
+
+
+/* 
+5.AC - It aligns the whole content
+AI - It align all the values which actually inside the content
+
+ex. if a box is content  - the whole box gets adjust left/right/top/bottom etc.
+ex. the item inside the box - that gets adjust as above */
+}
+/* 
+6.ALIGN-SELF - IT IS CHILD CONTAINER WHICH MEANS CAN ADJUST INDIVIDUALLY AND IT SHOULD GIVEN TO THE CHILD ELEMENTS NOT TO THE PARENT CONTAINER LIKE ABOVE
+you can use it for both direction by giving
+flex-direction:row - then it gets adjust by column and vice-versa.  */
+
+/* 7.0RDER - FOR CHANGING THE ORDER */
+
+/* 8.FLEX -GROW */
+
+/* DIFF BW FLEX-GROW/BASIS */
+/* 
+FLEX-GROW - it is the fluid it gets grow/shrink according to the size
+FLEX-BASIS - (flex-basis:30px)- it is default static size */
+
+/* 
+9.FLEX-WRAP
+
+10.FLEX-FLOW(Shorthand) - FLEX-DIRECTION FLEX-WRAP
+
+
+11.FLEX(shorthand) - FLEX-GROW FLEX-SHRINK FLEX-BASIS 
+
+12.BOX-MODEL
+
+FOUR BASIC LAYER - EVERY ELEMENT IN HTML OBEY THIS
+
+CONTENT->PADDING->BORDER->MARGIN
+
+padding:top left bottom right;
+
+border: 2px(size) solid/dashed/dotted black(color); 
+margin - margin sharing concept is important to know
+
+BORDER-BOX -  3 PROPERTIES
+
+1.BORDER-BOX - commonly used 
+
+if content is 100px then you adding padding 15 px = now what happen is padding value applies/cope up with the content and remains 100px
+
+2.CONTENT-BOX - 
+
+if content is 100px then you adding padding 15 px = content size is statically 100px the new padding size 15 getting added as indivually again out from content so now totally it becomes
+100 + 15(2) = 130px
+
+3.PADDING-BOX - Rarely used it only for FIRE-FOX
+ 
+ */
+
+
+ /* 13.BOX-SHADOW */
+/* 
+ - offset-x
+ -offset-y
+ -blur-radius
+ -spread-radius
+ color */
+
+
+ /* Shadow demo */
+/* 
+ .shadow-demo{
+    display: flex;
+    place-content: center;
+    width: 100px;
+    margin: 50px;
+    
+ }
+
+ button{
+    
+    border:none;
+    font-size: 20px;
+    border-radius: 5px;
+    /* syntax:x-axis y-axis blur-radius spread-radius rgba(color(0,0,0),alpha(opacity)) */
+    /* box-shadow: 20px -10px 50px rgba(0, 0, 0, 0.5); negative value - moving top */
+
+    /* BLUR-RADIUS
+    box-shadow: 0 0 50px rgba(0,0,0,0.8); 
+
+    
+    box-shadow: 0 0 0 50px rgba(0,0,0,0.8);
+
+     combination of blur/spread radius 
+    box-shadow: 0 0 8px 10px rgba(0,0,0,0.8);
+
+     combination of all 
+    box-shadow: 8px 10px 10px 1px rgba(0,0,0,0.5);
+
+
+    
+
+    
+ } */
+/* 
+
+ 14.POSITION - ESPECIALLY USEFUL TO MAKE ASYMMETRICAL WEBSITE(YOU CAN PLACE THE ITEM WHERE YOU WANT)
+
+ STATIC - default one
+ 
+ RELATIVE - This should be given to parent which means the child(where have to use absolute,fixed.sticky)
+ moves according t the parent else it moves according to the default setting.
+
+ ABSOLUTE - It completely gets out of the document flow and move according to the relative where we given it.
+
+ FIXED - just like absolute but it completely out over the document.
+
+ STICKY - just like fixed but once it reaches it given value it gets stick there.(ex.navbar while scrolling)
+ */
+/* 
+ 15.4 WAYS TO CENTER A ITEM
+
+ -FLEX BOX
+
+ justify-content:center; - now horizontally center
+ align-content:center; now vertically center - now comes to  center position
+for align-content have to set the height else it wont gets work.
+
+-GRID BOX
+
+SAME AS ABOVE JC AND AC
+
+-POSITION
+
+set relative to parent
+set absolute to child
+top:50%,lrft:50% - but it actually not a center,here the corner of the box is reaches its center but we want the center point of the box in center.
+to make it possible use translate property
+
+transform:translate(-50%,-50%)
+
+-MARGIN
+
+DISPLAY FLEX TO THE PARENT
+margin:auto */
+ 
